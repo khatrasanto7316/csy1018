@@ -3,64 +3,69 @@
 <!DOCTYPE html>
 <!-- html of the page starts from here -->
 <html>
-<!-- this part is for head of the page -->
+<!-- this is for head of the page -->
 <head>
-  <!-- this part is for the title of the page -->
+  <!-- this is for the title of the page -->
 <title>Portfolio</title>
 <!-- this is the code to link html and css -->
 <link href="css/main.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=3d-float">
 <link rel="stylesheet" href="/lib/w3.css">
-<link rel="icon" type="image/jpg" href="images/title icon.jpg" />
+<link rel="icon" type="image/jpg" href="images/titleicon.jpg" />
+<meta charset="UTF-8">
 <!-- this is for closing head -->
 </head>
-<!-- this part is for the body of the page -->
+<!-- this is for the body of the page -->
 <body>
 <!-- header of the page starts here -->
-<header>
-    <h1>Welcome To My Portfolio</h1>
-<!-- this is for closing header -->
-</header>
-<!-- this part is for the elements that will be present on menubar -->
+<div class="header">
+  <img src="images/logo.jpg" alt="logo">
+    <h1>Welcome To My CV Portfolio</h1>
+</div>
+<!-- this is for the elements that will be present on menubar -->
 <div class="menubar">
   <ul>
     <li><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
     <li><a href="cv.html"><i class="fa fa-file"></i>CV</a></li>
     <li><a href="bio.html"><i class="fa fa-file-text"></i>Bio</a></li>
     <li><a href="contact.html"><i class="fa fa-envelope"></i>Contact me</a></li>
-    <li><input type="text" name="search" placeholder="Search.."><i class="fa fa-search"></i></li>
   </ul>
 </div>
-<!-- this part is for section of the page -->
+<!-- this is for section of the page -->
 <section>
-  <!-- this part is for the elements that will be present on sidebar -->
+  <!-- this is for the elements that will be present on sidebar -->
   <div class="sidebar">
     <!-- this code is creating class of images -->
-    <div class="img">
       <img src="images/contact.jpg" alt="logo">
-    </div>
   </div>
-  <!-- this part is for contact me -->
+  <!-- this is for contact me -->
   <div class="main">
-    <article>
       <h3>Contact me</h3>
-        <p><h2>Drop me an e-mail</h2>
 <!-- this is for e-mail address form -->
-<form>
 <form action="mailto:khatrasanto@gmail.com" method="post" enctype="text/plain">
-Name:<br>
-<input type="text" name="name"><br>
-E-mail:<br>
-<input type="text" name="mail"><br>
-Comment:<br>
-<input type="text" name="comment" size="50"><br><br>
-<input type="submit" value="Send">
-<input type="reset" value="Reset">
-<!-- this is for e-mail address form -->
+  <fieldset>
+    <legend><h4>Drop me an e-mail</h4></legend>
+      <label>Name: </label>
+        <input type ="text" name="name" placeholder="Enter full name"><br><br>
+
+      <label>Address: </label>
+        <input type ="text" name="address"><br><br>
+
+      <label>Email: </label>
+        <input type ="email" name="email"><br><br>
+
+      <label>Gender: </label>
+        <input type ="radio" name="gender" value="male">Male
+        <input type ="radio" name="gender" value="male">Female
+
+      <br><br><label>Comments: </label><br><br>
+          <textarea name="comments" rows="8" cols="80"></textarea>
+
+      <br><br><input type="submit" value="Send">
+  </fieldset>
+<!-- this is for closing e-mail address form -->
 </form>
-<br><h3>You may also contact me in any other channels which best suits you.</h3></br><i class="fa fa-facebook-square"></i>
-<i class="fa fa-google"></i><i class="fa fa-twitter"></i></P>
-    </article>
   </div>
 <!-- section of the page ends here -->
 </section>
@@ -69,14 +74,15 @@ Comment:<br>
   <!-- this part is for visiting me on social medias -->
   <div class="block">
     <h3>Visit me on Social medias</h3>
-     <i class="fa fa-facebook-square"></i>
-     <i class="fa fa-google"></i>
-     <i class="fa fa-twitter"></i>
+    <a href="https://www.facebook.com/santokhatra"><img src="images/facebook.jpg" alt="logo"></a>
+    <a href="https://www.instagram.com/santokhatra/?hl=en"><img src="images/instragram.jpg" alt="logo"></a>
+    <a href="https://twitter.com/santokhatra"><img src="images/twitter.jpg" alt="logo"></a>
+    <a href="https://plus.google.com/u/0/114658923163153770028"><img src="images/googleplus.jpg" alt="logo"></a>
   </div>
   <!-- this part is for copyright permission allowed -->
   <div class="block">
     <h3>Copyright</h3>
-      <p>Copyright @2017. All rights reserved.</P>
+      <p>Copyright ©2017. All rights reserved.</p>
   </div>
   <!-- this part is for knowing actually who developed this required page -->
   <div class="block">
