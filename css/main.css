@@ -213,6 +213,10 @@ footer
 
 @media  all and (max-width: 600px)
 {
+body
+{
+  line-height: 37px;
+}
   section, footer, .menubar ul
   {
     flex-direction: column;
@@ -223,7 +227,7 @@ footer
     width: 98%;
   }
 
-  img
+  .sidebar img
   {
     width: 99%;
   }
